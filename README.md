@@ -57,16 +57,17 @@ Total: 5,000 unique orders; No missing keys; Merged on Order Number & Supplier I
 
 ### Transformation / Preparation / Data Cleaning Process
 
-1- Import: CREATE DATABASE SupplyChainDB; Bulk load CSVs.
-2- Explore: COUNT(*) (5K rows/table); sp_help; Duplicates/NULLs (0).
+1- Import: **CREATE DATABASE SupplyChainDB;** Bulk load CSVs.
+2- Explore: **COUNT(*)** (5K rows/table); **sp_help;** Duplicates/NULLs (0).
 3- Clean:
 
-| Step | SQL
-| Remove Duplicates| DELETE ... HAVING COUNT(*) > 1
-| NULLs → 0 | UPDATE Damaged_Units/Returns = 0
-| Data Types| TRY_CONVERT(DATE) for Order_Date; DECIMAL for Freight
+| Step | SQL |
+|------|-----|
+| Remove Duplicates | **DELETE ... HAVING COUNT(*) > 1** | 
+| NULLs → 0 | **UPDATE Damaged_Units/Returns = 0** | 
+| Data Types | **TRY_CONVERT(DATE)** for Order_Date; DECIMAL for Freight | 
 
-4- Merge: JOIN on Order_Number/Supplier_id.
+4- Merge: **JOIN** on Order_Number/Supplier_id.
 5- Validate: No orphans; 100% match.
 
 [Insert Screenshot Here: SQL Cleaning Queries & Execution Plan]
@@ -89,20 +90,22 @@ SQL-Powered Interactive Views (Run in SSMS/Power BI):
 
 Sample Query Output:
 
-Supplier | Orders | On-Time % | Avg Damaged
-H7L      | 1,719  | 81.0     | 4.55
-Star     | 1,665  | 80.1     | 4.49
-AG       | 1,616  | 80.0     | **4.41** (Best)
+Supplier | Orders | On-Time % | Avg Damaged |
+H7L      | 1,719  | 81.0     | 4.55 |
+Star     | 1,665  | 80.1     | 4.49 | 
+AG       | 1,616  | 80.0     | **4.41** (Best) |
 
 [Insert Screenshot Here: Power BI Dashboard Mockup or SSMS Results Grid]
 
 ### Data Analysis & Results
 
 - Supplier Breakdown:
-| Supplier | Orders | Units,On-Time % | Avg Damaged | Avg Freight
-| H7L | 1,719 | 213,939 | 81.0 | 4.55 | $99.82
-| Star| 1,665 | 207,540 | 80.1 | 4.49 | $100.36
-| AG | 1,616 | 203,620 | 80.0 | 4.41 | $100.25
+
+| Supplier | Orders | Units,On-Time % | Avg Damaged | Avg Freight |
+|----------|--------|-----------------|-------------|-------------|
+| H7L | 1,719 | 213,939 | 81.0 | 4.55 | $99.82 |
+| Star| 1,665 | 207,540 | 80.1 | 4.49 | $100.36 |
+| AG | 1,616 | 203,620 | 80.0 | 4.41 | $100.25 |
 
 - Late Orders: 983 (19.7%); Avg Del Time: 2.54 days (vs 2.48 on-time).
 - Costs: $500,700 total freight; Damaged: ~22,500 units lost.
