@@ -35,16 +35,25 @@ Total: 5,000 unique orders; No missing keys; Merged on Order Number & Supplier I
 ## Core KPIs
 
 
-| KPI | Value | Insight
-Total Orders| 5,000 | Stable volume
-Total Units Shipped | 625,099 | High throughput
-Avg Raw Material Lead Time | 4.01 days | Efficient sourcing
-Avg Manufacturing Time | 5.53 days | Bottleneck here
-Avg Delivery Time| 2.50 days | Strong logistics
-Avg Freight Cost| $100.14 | Optimize for savings
-On-Time Delivery Rate| 80.34% | Room for 90% target
-Damage Rate| 3.61% | $22K lost value
-Return Rate | 1.63% | Quality issue
+| KPI | Value | Insight |
+|-----|-------|---------|
+|Total Orders| 5,000 | Stable volume |
+|-----|-------|---------|
+Total Units Shipped | 625,099 | High throughput | 
+|-----|-------|---------|
+|Avg Raw Material Lead Time | 4.01 days | Efficient sourcing |
+|-----|-------|---------|
+| Avg Manufacturing Time | 5.53 days | Bottleneck here | 
+|-----|-------|---------|
+| Avg Delivery Time| 2.50 days | Strong logistics | 
+|-----|-------|---------|
+| Avg Freight Cost| $100.14 | Optimize for savings | 
+|-----|-------|---------|
+| On-Time Delivery Rate| 80.34% | Room for 90% target | 
+|-----|-------|---------|
+| Damage Rate| 3.61% | $22K lost value | 
+|-----|-------|---------| 
+| Return Rate | 1.63% | Quality issue | 
 
 
 ### Questions Answered
