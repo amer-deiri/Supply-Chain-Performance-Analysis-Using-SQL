@@ -68,6 +68,7 @@ Total: 5,000 unique orders; No missing keys; Merged on Order Number & Supplier I
 | Data Types | **TRY_CONVERT(DATE)** for Order_Date; DECIMAL for Freight | 
 
 4- Merge: **JOIN** on Order_Number/Supplier_id.
+
 5- Validate: No orphans; 100% match.
 
 [Insert Screenshot Here: SQL Cleaning Queries & Execution Plan]
@@ -85,12 +86,16 @@ Total: 5,000 unique orders; No missing keys; Merged on Order Number & Supplier I
 SQL-Powered Interactive Views (Run in SSMS/Power BI):
 
 1- Overview Page: KPI cards + Pie (On-Time vs Late).
+
 2- Supplier Comparison: Bar charts (Orders, On-Time %, Damaged).
+
 3- Trends Page: Line (Lead Times by Supplier) + Heatmap (Freight by Status).
+
 
 Sample Query Output:
 
-Supplier | Orders | On-Time % | Avg Damaged |
+| Supplier | Orders | On-Time % | Avg Damaged |
+|----------|--------|-----------|-------------|
 H7L      | 1,719  | 81.0     | 4.55 |
 Star     | 1,665  | 80.1     | 4.49 | 
 AG       | 1,616  | 80.0     | **4.41** (Best) |
