@@ -36,10 +36,10 @@ Total: 5,000 unique orders; No missing keys; Merged on Order Number & Supplier I
 
 
 | KPI | Value | Insight |
---------------------------
+|-----|-------|---------| 
 |Total Orders| 5,000 | Stable volume |
----------------------------------------
-Total Units Shipped | 625,099 | High throughput | 
+
+|Total Units Shipped | 625,099 | High throughput | 
 
 |Avg Raw Material Lead Time | 4.01 days | Efficient sourcing |
 
