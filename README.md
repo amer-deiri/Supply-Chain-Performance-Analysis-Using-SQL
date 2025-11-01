@@ -58,8 +58,11 @@ Total: 5,000 unique orders; No missing keys; Merged on Order Number & Supplier I
 ### Transformation / Preparation / Data Cleaning Process
 
 1- Import: **CREATE DATABASE SupplyChainDB;** Bulk load CSVs.
+
 2- Explore: **COUNT(*)** (5K rows/table); **sp_help;** Duplicates/NULLs (0).
+
 3- Clean:
+
 
 | Step | SQL |
 |------|-----|
@@ -125,11 +128,17 @@ AG       | 1,616  | 80.0     | **4.41** (Best) |
 ### Recommendations
 
 1- Prioritize H7L: +10% volume for 81% on-time.
+
 2- Manufacturing Fix: Target <5 days via automation/training.
+
 3- Quality Program: Partner with AG for damage reduction (Target: <3%).
+
 4- Freight Optimization: Negotiate bulk rates (Save 10–15%).
+
 5- Monitor Late Orders: Alert on >3-day delivery.
+
 6- Next Steps: Power BI dashboard + Monthly refresh; Forecast with ML.
+
 
 
 [Insert Screenshot Here: Supplier Performance Chart]
