@@ -12,7 +12,7 @@ Key focus: Identify bottlenecks, top suppliers, and cost-saving opportunities to
 
 Business Impact: 80.34% on-time delivery; $500K avg freight/order volume; 3.61% damage rate—actionable insights to reduce costs by 10–15%.
 
-[Insert Screenshot Here: Overall KPI Summary Table from SQL Query]
+![Overall KPI Summary Table from SQL Query]( https://github.com/amer-deiri/Supply-Chain-Performance-Analysis-Using-SQL/blob/main/Overall%20KPI%20Summary%20Table%20from%20SQL%20Query.png)
 
 ### Dataset Used : 
 
@@ -74,7 +74,10 @@ Total: 5,000 unique orders; No missing keys; Merged on Order Number & Supplier I
 
 5- Validate: No orphans; 100% match.
 
-[Insert Screenshot Here: SQL Cleaning Queries & Execution Plan]
+![SQL Cleaning Queries & Execution Plan]( https://github.com/amer-deiri/Supply-Chain-Performance-Analysis-Using-SQL/blob/main/datacleaning%20_1.png)
+![SQL Cleaning Queries & Execution Plan]( https://github.com/amer-deiri/Supply-Chain-Performance-Analysis-Using-SQL/blob/main/datacleaning%20_2.png)
+![SQL Cleaning Queries & Execution Plan]( https://github.com/amer-deiri/Supply-Chain-Performance-Analysis-Using-SQL/blob/main/datacleaning%20_3.png)
+
 
 
 ### Exploratory Data Analysis (EDA)
@@ -103,7 +106,7 @@ H7L      | 1,719  | 81.0     | 4.55 |
 Star     | 1,665  | 80.1     | 4.49 | 
 AG       | 1,616  | 80.0     | **4.41** (Best) |
 
-[Insert Screenshot Here: Power BI Dashboard Mockup or SSMS Results Grid]
+![SSMS Results Grid]( https://github.com/amer-deiri/Supply-Chain-Performance-Analysis-Using-SQL/blob/main/SSMS%20Results%20Grid.png)
 
 ### Data Analysis & Results
 
@@ -141,5 +144,5 @@ AG       | 1,616  | 80.0     | **4.41** (Best) |
 
 
 
-[Insert Screenshot Here: Supplier Performance Chart]
+![Supplier Performance Chart]( https://github.com/amer-deiri/Supply-Chain-Performance-Analysis-Using-SQL/blob/main/Supplier%20Performance%20Chart.png)
 
